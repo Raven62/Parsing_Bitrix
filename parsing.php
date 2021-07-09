@@ -58,7 +58,8 @@
             
         }
 
-
+        if ($y == false){
+            
         $PROP = array();
         $PROP["prop1"] = $el["prop1"]; 
         $PROP["prop2"] = $el["prop2"];
@@ -72,8 +73,7 @@
         "PROPERTY_VALUES"=> $PROP,
         );
 
-        if ($y == false)
-        {
+       
            if($PRODUCT_ID = $bs->Add($arFields))
            {
            echo $key.'.New ID: '.$PRODUCT_ID.'(XML_ID = cmt_'.$el['id'].')<br>';
